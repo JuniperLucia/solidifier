@@ -1,0 +1,12 @@
+name: Solidifier
+version: '${project.version}'
+main: ind.coralsolace.solidifier.Solidifier
+api-version: 1.19
+prefix: Solidifier
+authors: [ CoralDawn ]
+description: A plugin for Paper 1.19 that adds a command that can manipulate concrete.
+commands:
+  solidify:
+    description: oh god help me
+    usage: /solidify
+    aliases: helpme
