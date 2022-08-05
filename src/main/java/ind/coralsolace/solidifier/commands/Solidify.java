@@ -34,7 +34,7 @@ public class Solidify implements CommandExecutor {
             ItemStack heldItem = inventory.getItemInMainHand();
             if (materialCheck(heldItem)) {
                 Material[] conCrete = {Material.WHITE_CONCRETE, Material.ORANGE_CONCRETE, Material.MAGENTA_CONCRETE, Material.LIGHT_BLUE_CONCRETE, Material.YELLOW_CONCRETE, Material.LIME_CONCRETE, Material.PINK_CONCRETE, Material.GRAY_CONCRETE, Material.LIGHT_GRAY_CONCRETE, Material.CYAN_CONCRETE, Material.PURPLE_CONCRETE, Material.BLUE_CONCRETE, Material.BROWN_CONCRETE, Material.GREEN_CONCRETE, Material.RED_CONCRETE, Material.BLACK_CONCRETE};
-                Integer quantity = heldItem.getAmount();
+                int quantity = heldItem.getAmount();
                 ItemStack item = new ItemStack(conCrete[i], quantity);
                 inventory.setItemInMainHand(item);
                 sender.sendMessage("§7Solidify §l" + quantity + "§r§7 of [§8" + conCrete[i] + "§7]");

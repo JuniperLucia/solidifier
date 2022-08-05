@@ -1,7 +1,7 @@
 package ind.coralsolace.solidifier;
 
+import ind.coralsolace.solidifier.commands.Erode;
 import ind.coralsolace.solidifier.commands.Solidify;
-import org.bukkit.command.CommandExecutor;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class Solidifier extends JavaPlugin {
@@ -10,6 +10,7 @@ public final class Solidifier extends JavaPlugin {
     public void onEnable() {
         // Plugin startup logic
         getCommand("solidify").setExecutor(new Solidify());
+        getCommand("erode").setExecutor(new Erode());
     }
 
     @Override

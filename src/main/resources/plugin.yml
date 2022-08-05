@@ -7,6 +7,10 @@ authors: [ CoralDawn ]
 description: A plugin for Paper 1.19 that adds a command that can manipulate concrete.
 commands:
   solidify:
-    description: oh god help me
+    description: Hardens Concrete Powder into Concrete.
     usage: /solidify
-    aliases: helpme
+    aliases: harden
+  erode:
+    description: Breaks Concrete down back into Concrete Powder.
+    usage: /erode
+    aliases: soften
